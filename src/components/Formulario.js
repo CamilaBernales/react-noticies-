@@ -55,6 +55,7 @@ const Formulario = () => {
                             <option value='mx'>Mexico</option>
                             <option value='eg'>Egipto</option>
                             <option value="">Todos</option>
+                            
                         </Form.Control>
                     </Form.Group>
                 </Form>

@@ -11,7 +11,7 @@ const ListaNoticias = () => {
 
     console.log(categoria, pais);
 
-    const consultarCategoria = async () => {
+    const llamarAPi = async () => {
         const solicitud = await fetch(`http://newsapi.org/v2/top-headlines?category=${categoria}&country=${pais}&apiKey=f28371d589e740b2a1ef4dd1c8a0132d`);
         const respuesta = await solicitud.json();
         console.log(respuesta.articles);
@@ -21,7 +21,7 @@ const ListaNoticias = () => {
 
 
     useEffect(() => {
-        consultarCategoria();
+        llamarAPi();
     }, [categoria, pais]);
 
 
