@@ -64,7 +64,7 @@ const Formulario = () => {
                             <option value='fr'>France</option>
                             <option value='de'>Germany</option>
                             <option value='gr'>Greece</option>
-                            <option value='hk'>Hong Kond</option>
+                            <option value='hk'>Hong Kong</option>
                             <option value='hu'>Hungary</option>
                             <option value='in'>India</option>
                             <option value='id'>Indonesia</option>
