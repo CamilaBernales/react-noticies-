@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Card, Button, Col } from 'react-bootstrap';
+import {  Card, Button } from 'react-bootstrap';
 
 
 const Noticia = (articles) => {
@@ -8,23 +8,14 @@ const Noticia = (articles) => {
 
     return (
 
-
-
-        <Col>
             <Card style={{ width: '18rem' }} key={id} value={id}>
                 <Card.Img variant="top" src={urlToImage} />
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>{description}</Card.Text>
                 </Card.Body>
-                <Button href={url} variant="primary">Ver Noticia Completa</Button>
-                <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                </Card.Footer>
-
+                <Button style={{width: '100%' }}target="_blank" href={url} variant="dark">Read More</Button>
             </Card>
-        </Col>
-
     );
 }
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Row } from 'react-bootstrap';
+import { Container,  CardColumns } from 'react-bootstrap';
 import { useParams } from 'react-router-dom'
 import Noticia from './Noticia'
 
@@ -28,14 +28,14 @@ const ListaNoticias = () => {
 
     return (
         <Container>
-            <Row>
+            <CardColumns>
                 {
                     articles.map((articles) =>
                         <Noticia
                             articles={articles} />
                     )
                 }
-            </Row>
+            </CardColumns>
         </Container>
     );
 }
