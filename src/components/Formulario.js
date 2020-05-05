@@ -4,15 +4,11 @@ import { Redirect } from "react-router";
 
 const Formulario = () => {
 
-
-
     const [pais, setPais] = useState('');
     const [categorias, setCategorias] = useState('general');
 
     useEffect(() => {
-        console.log(categorias);
-
-
+        
     }, [categorias])
 
     const seleccionarCategoria = e => {

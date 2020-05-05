@@ -2,13 +2,13 @@ import React from 'react'
 import {  Card, Button } from 'react-bootstrap';
 
 
-const Noticia = (articles) => {
+const Noticia = ({articles}) => {
 
-    const { id, title, description, urlToImage, url } = articles.articles;
+    const {title, description, urlToImage, url } = articles;
 
     return (
-
-            <Card style={{ width: '18rem' }} key={id} value={id}>
+        <div className="col s12 m8 offset-m2">
+            <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={urlToImage} />
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
@@ -16,6 +16,7 @@ const Noticia = (articles) => {
                 </Card.Body>
                 <Button style={{width: '100%' }}target="_blank" href={url} variant="dark">Read More</Button>
             </Card>
+            </div>
     );
 }
 
